@@ -13,10 +13,14 @@ public class CodeWriter {
         filewriter = new FileWriter(f);
         filename = f.getName().substring(0, f.getName().indexOf('.'));
 
-        initializePointers();
+//        initializePointers(); // Initializes base addresses (SP, LCL, ARG, THIS, THAT)
     }
 
-    public int getArgCount(String command) {
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
+    private int getArgCount(String command) {
         return switch (command) {
             case "neg", "not" -> 1;
             case "add", "sub", "eq", "gt", "lt", "and", "or" -> 2;
@@ -24,7 +28,7 @@ public class CodeWriter {
         };
     }
 
-    public String getOperator(String command) {
+    private String getOperator(String command) {
         return switch (command) {
             case "add" -> "+";
             case "neg", "sub" -> "-";
@@ -48,6 +52,10 @@ public class CodeWriter {
         initializePointer("ARG", 400);
         initializePointer("THIS", 3000);
         initializePointer("THAT", 3010);
+    }
+
+    public void writeInit() {
+
     }
 
     public void writeArithmetic(String command) throws IOException {
@@ -241,6 +249,26 @@ public class CodeWriter {
             default:
                 break;
         }
+    }
+
+    public void writeLabel(String label) {
+
+    }
+
+    public void writeGoto(String label) {
+
+    }
+
+    public void writeIf(String label) {
+
+    }
+
+    public void writeFunction(String functionName, int numVars) {
+
+    }
+
+    public void writeCall(String functionName, int numArgs) {
+
     }
 
     public void close() throws IOException {
