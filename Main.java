@@ -17,7 +17,6 @@ public class Main {
         for (File file : files) {
             if (file.getPath().substring(file.getPath().indexOf(".")).equals(".vm")) {
                 Parser parser = new Parser(file);
-                int x = 0;
                 while (parser.hasMoreCommands()) {
                     parser.advance();
 
