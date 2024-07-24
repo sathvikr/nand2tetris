@@ -1,0 +1,72 @@
+<class>
+	<keyword> class </keyword>
+	<classIdentifier0> Main </classIdentifier0>
+	<symbol> { </symbol>
+	<subroutineDec>
+		<keyword> function </keyword>
+		<keyword> void </keyword>
+		<subroutineIdentifier0> main </subroutineIdentifier0>
+		<symbol> ( </symbol>
+		<parameterList>
+		</parameterList>
+		<symbol> ) </symbol>
+		<subroutineBody>
+			<symbol> { </symbol>
+			<varDec>
+				<keyword> var </keyword>
+				<keyword> int </keyword>
+				<varIdentifier0> x </varIdentifier0>
+				<symbol> ; </symbol>
+			</varDec>
+			<statements>
+				<letStatement>
+					<keyword> let </keyword>
+					<varIdentifier1> x </varIdentifier1>
+					<symbol> = </symbol>
+					<expression>
+						<term>
+							<integerConstant> 8 </integerConstant>
+						</term>
+					</expression>
+					<symbol> ; </symbol>
+				</letStatement>
+				<doStatement>
+					<keyword> do </keyword>
+					<classIdentifier1> Output </classIdentifier1>
+					<symbol> . </symbol>
+					<subroutineIdentifier1> printInt </subroutineIdentifier1>
+					<symbol> ( </symbol>
+					<expressionList>
+						<expression>
+							<term>
+								<integerConstant> 1 </integerConstant>
+							</term>
+							<symbol> + </symbol>
+							<term>
+								<symbol> ( </symbol>
+								<expression>
+									<term>
+										<Identifier1> x </Identifier1>
+									</term>
+									<symbol> - </symbol>
+									<term>
+										<integerConstant> 5 </integerConstant>
+									</term>
+								</expression>
+								<symbol> ) </symbol>
+							</term>
+						</expression>
+					</expressionList>
+					<symbol> ) </symbol>
+					<symbol> ; </symbol>
+				</doStatement>
+				<returnStatement>
+					<keyword> return </keyword>
+					<symbol> ; </symbol>
+				</returnStatement>
+			</statements>
+			<symbol> } </symbol>
+		</subroutineBody>
+	</subroutineDec>
+	<symbol> } </symbol>
+</class>

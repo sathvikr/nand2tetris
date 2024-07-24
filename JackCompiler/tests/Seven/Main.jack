@@ -1,0 +1,11 @@
+
+class Main {
+
+   function void main() {
+      var int x;
+      let x = 8;
+      do Output.printInt(1 + (x - 5));
+      return;
+   }
+
+}
